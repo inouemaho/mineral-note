@@ -1,0 +1,367 @@
+/* 基本スタイル */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --text-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --modal-background: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* モーダルスタイル */
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal__container {
+    background-color: var(--modal-background);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 10vh auto;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .modal__container {
+        max-width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal__title {
+    margin: 0;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.modal__close {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal__content {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* アプリ説明 */
+.app-description {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* アルファベット索引 */
+.alphabet-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.alphabet-index button {
+    padding: 8px 12px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.alphabet-index button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* 鉱物リスト */
+.minerals-list {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.letter-section {
+    background-color: var(--background-color);
+    padding: 10px;
+    margin: 20px -10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.letter-section h3 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.mineral-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #dee2e6;
+    cursor: pointer;
+}
+
+.mineral-item:hover {
+    background-color: #f8f9fa;
+}
+
+.mineral-names {
+    flex-grow: 1;
+}
+
+.mineral-name-en {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.mineral-name-jp {
+    font-size: 0.9em;
+    color: var(--secondary-color);
+    margin: 4px 0 0 0;
+}
+
+/* いいねボタン */
+.like-button {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #ccc;
+    cursor: pointer;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.like-button.active {
+    color: var(--accent-color);
+}
+
+/* 詳細モーダル */
+.mineral-detail {
+    padding: 20px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--secondary-color);
+    z-index: 10;
+}
+
+.modal__close::before {
+    content: '×';
+    line-height: 1;
+}
+
+.modal__close:hover {
+    color: var(--accent-color);
+}
+
+.modal__close:focus {
+    outline: none;
+    color: var(--accent-color);
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-right: 40px;
+}
+
+.name-container {
+    flex-grow: 1;
+}
+
+.detail-like-button {
+    font-size: 2em;
+}
+
+.chemical-formula {
+    font-family: monospace;
+    font-size: 1.2em;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.detail-section {
+    margin: 20px 0;
+}
+
+.detail-section h5 {
+    color: var(--secondary-color);
+    margin: 0 0 10px 0;
+    font-size: 1em;
+}
+
+.detail-section p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .modal__container {
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .alphabet-index {
+        gap: 4px;
+    }
+
+    .alphabet-index button {
+        padding: 6px 8px;
+        font-size: 0.9em;
+    }
+}
+
+/* モーダル表示制御 */
+.modal {
+    display: none;
+}
+
+.modal.is-open {
+    display: block;
+}
+
+.modal[aria-hidden="false"] {
+    display: block;
+}
+
+/* モーダルアニメーション */
+.modal__overlay {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.modal.is-open .modal__overlay,
+.modal[aria-hidden="false"] .modal__overlay {
+    opacity: 1;
+}
+
+.modal__container {
+    transform: translateY(20px);
+    transition: all 0.3s ease-out;
+    touch-action: pan-y pinch-zoom;
+}
+
+/* 詳細モーダルのコンテナのみtouch-actionを制限 */
+#modal-detail .modal__container.swiping {
+    touch-action: none;
+}
+
+.modal.is-open .modal__container,
+.modal[aria-hidden="false"] .modal__container {
+    transform: translateY(0);
+}
+
+.modal__container.swiping {
+    transition: none;
+    overscroll-behavior: none;
+}
+
+.modal__container.swipe-close {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(120vh) !important;
+}
+
+.modal__container.bounce-back {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* スクロール制御 */
+body.has-modal {
+    overflow: hidden;
+}
+
+/* モーダルコンテナの調整 */
+.modal__container {
+    background: var(--modal-background);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    border-radius: 8px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .modal__container {
+        max-width: 100%;
+        height: calc(100vh - env(safe-area-inset-top));
+        max-height: calc(100vh - env(safe-area-inset-top));
+        margin: env(safe-area-inset-top) 0 0 0;
+        border-radius: 0;
+        padding-top: calc(20px + env(safe-area-inset-top));
+    }
+
+    .modal__close {
+        top: calc(10px + env(safe-area-inset-top));
+    }
+
+    .modal__header {
+        margin-top: env(safe-area-inset-top);
+    }
+
+    .app-description {
+        margin-top: calc(20px + env(safe-area-inset-top));
+    }
+}
