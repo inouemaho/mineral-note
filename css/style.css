@@ -50,40 +50,30 @@ body {
         max-height: calc(100vh - env(safe-area-inset-top));
         margin: env(safe-area-inset-top) 0 0 0;
         border-radius: 0;
-        padding-top: max(20px, env(safe-area-inset-top));
+        padding-top: calc(20px + env(safe-area-inset-top));
     }
 
     .modal__header {
         padding-top: env(safe-area-inset-top);
-        position: sticky;
-        top: 0;
         background-color: var(--modal-background);
-        z-index: 10;
+        margin-top: 0;
     }
 
     .modal__title {
-        padding-top: max(0px, env(safe-area-inset-top));
+        padding-top: env(safe-area-inset-top);
+        font-size: 1.5em;
     }
 
     .modal__close {
-        top: max(10px, env(safe-area-inset-top));
+        top: calc(10px + env(safe-area-inset-top));
     }
 
     .app-description {
-        margin-top: max(20px, env(safe-area-inset-top));
+        margin-top: calc(20px + env(safe-area-inset-top));
     }
 
     .alphabet-index {
-        position: sticky;
-        top: calc(env(safe-area-inset-top));
-        padding: 8px 4px;
-        margin: 0;
-        background-color: rgba(248, 249, 250, 0.95);
-        backdrop-filter: blur(5px);
-    }
-
-    .letter-section {
-        top: calc(60px + env(safe-area-inset-top));
+        gap: 4px;
     }
 
     .alphabet-index button {
@@ -97,12 +87,16 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    padding-top: env(safe-area-inset-top);
+    background-color: var(--modal-background);
 }
 
 .modal__title {
     margin: 0;
     font-weight: 600;
     color: var(--primary-color);
+    padding-top: env(safe-area-inset-top);
+    line-height: 1.2;
 }
 
 .modal__close {
@@ -130,14 +124,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin: 0;
+    margin: 20px 0;
     padding: 10px;
     background-color: #f8f9fa;
     border-radius: 4px;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .alphabet-index button {
@@ -165,7 +155,7 @@ body {
     padding: 10px;
     margin: 20px -10px 10px;
     position: sticky;
-    top: 60px;  /* アルファベット索引の高さ分を確保 */
+    top: 0;
     z-index: 1;
 }
 
