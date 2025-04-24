@@ -693,7 +693,965 @@ const MINERALS_DATA = {
             habit: ["柱状", "粒状"],
             occurrence: ["鉱石鉱物"],
             strunz_classification: "09.A門 ネソ珪酸塩鉱物"
+        },
+        {
+            "id": 61,
+            "name_jp": "アクロアイト",
+            "name_en": "ACHROITE",
+            "chemical_formula_html": "NaAlSiO<sub>4</sub>",
+            "origin": [],
+            "description": "無色または淡色のトルマリンの一種。",
+            "symmetry": "六方晶系",
+            "crystal_structure": "トルマリン・グループ",
+            "habit": ["柱状", "針状"],
+            "occurrence": ["ペグマタイト"],
+            "strunz_classification": "09.CK.05"
+        },
+        {
+            "id": 62,
+            "name_jp": "緑閃石",
+            "name_en": "ACTINOLITE",
+            "chemical_formula_html": "Ca<sub>2</sub>(Mg,Fe)<sub>5</sub>Si<sub>8</sub>O<sub>22</sub>(OH)<sub>2</sub>",
+            "origin": [],
+            "description": "角閃石グループに属する鉱物で、緑色を呈します。変成岩中に広く見られます。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "角閃石グループ",
+            "habit": ["柱状", "針状", "繊維状"],
+            "occurrence": ["変成鉱物"],
+            "strunz_classification": "09.DE.05"
+        },
+        {
+            "id": null,
+            "name_jp": "アダム石",
+            "name_en": "ADAMITE",
+            "chemical_formula_html": "Zn<sub>2</sub>AsO<sub>4</sub>(OH)",
+            "origin": [],
+            "description": "亜鉛と砒素を含む水酸化砒酸塩鉱物で、通常は黄色から緑色を呈します。二次鉱物として産出します。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "アダム石グループ",
+            "habit": ["錐状", "扇状", "塊状", "球状"],
+            "occurrence": ["二次鉱物"],
+            "strunz_classification": "08.BB.20"
+        },
+        {
+            "id": null,
+            "name_jp": "エジリン輝石",
+            "name_en": "AEGIRINE",
+            "chemical_formula_html": "NaFe<sup>3+</sup>Si<sub>2</sub>O<sub>6</sub>",
+            "origin": [],
+            "description": "ナトリウムと鉄を含む単斜輝石の一種で、通常は緑色から黒色を呈します。火成岩やアルカリ岩中に見られます。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "輝石グループ",
+            "habit": ["柱状", "針状"],
+            "occurrence": ["火成岩"],
+            "strunz_classification": "09.DA.25"
+        },
+        {
+            "id": null,
+            "name_jp": "アホーアイト",
+            "name_en": "AJOITE",
+            "chemical_formula_html": "(K,Na)Cu<sub>7</sub>AlSi<sub>9</sub>O<sub>24</sub>(OH)<sub>6</sub>·3H<sub>2</sub>O",
+            "origin": [],
+            "description": "水和したアルカリ銅アルミニウム珪酸塩鉱物で、鮮やかな青緑色を呈します。稀産鉱物です。",
+            "symmetry": "六方晶系",
+            "crystal_structure": "単鎖珪酸塩鉱物",
+            "habit": ["繊維状", "放射状"],
+            "occurrence": ["二次鉱物"],
+            "strunz_classification": "09.DH.30"
+        },
+        {
+            "id": 1,
+            "name_jp": "曹長石",
+            "name_en": "ALBITE",
+            "chemical_formula_html": "NaAlSi<sub>3</sub>O<sub>8</sub>",
+            "origin": [
+                "Japan",
+                "USA",
+                "Canada",
+                "Norway",
+                "Italy",
+                "Switzerland"
+            ],
+            "description": "ナトリウムを主成分とする長石グループの鉱物。白色または灰色のことが多いが、無色、青色、緑色などを呈することもある。造岩鉱物として広く分布する。",
+            "symmetry": "三斜晶系",
+            "crystal_structure": "長石グループ",
+            "habit": [
+                "板状",
+                "柱状",
+                "塊状"
+            ],
+            "occurrence": [
+                "造岩鉱物",
+                "火成岩",
+                "変成鉱物"
+            ],
+            "strunz_classification": "09.FA.35"
+        },
+        {
+            "id": 2,
+            "name_jp": "アレキサンドライト",
+            "name_en": "ALEXANDRITE",
+            "chemical_formula_html": "BeAl<sub>2</sub>O<sub>4</sub>",
+            "origin": [
+                "Russia",
+                "Brazil",
+                "Sri Lanka",
+                "India",
+                "East Africa"
+            ],
+            "description": "変色効果（アレキサンドライト効果）を示すことで有名なクリソベリルの一種。昼光下では緑色、白熱灯下では赤紫色に変化する。宝石として珍重される。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "酸化鉱物グループ",
+            "habit": [
+                "柱状",
+                "板状",
+                "双晶"
+            ],
+            "occurrence": [
+                "変成鉱物",
+                "ペグマタイト"
+            ],
+            "strunz_classification": "04.BA.05"
+        },
+        {
+            "id": 3,
+            "name_jp": "鉄礬柘榴石",
+            "name_en": "ALMANDINE",
+            "chemical_formula_html": "Fe<sub>3</sub>Al<sub>2</sub>(SiO<sub>4</sub>)<sub>3</sub>",
+            "origin": [
+                "India",
+                "Sri Lanka",
+                "USA",
+                "Czech Republic",
+                "Madagascar",
+                "Brazil",
+                "Austria",
+                "Finland",
+                "Japan"
+            ],
+            "description": "鉄とアルミニウムを主成分とするガーネット（柘榴石）グループの鉱物。深赤色から褐色の色合いを持つ。変成岩中に広く見られる。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "柘榴石グループ",
+            "habit": [
+                "菱形十二面体",
+                "正二十四面体",
+                "塊状"
+            ],
+            "occurrence": [
+                "変成鉱物"
+            ],
+            "strunz_classification": "09.AD.10"
+        },
+        {
+            "id": 4,
+            "name_jp": "アマゾナイト",
+            "name_en": "AMAZONITE",
+            "chemical_formula_html": "KAlSi<sub>3</sub>O<sub>8</sub>",
+            "origin": [
+                "Brazil",
+                "USA",
+                "Russia",
+                "Madagascar",
+                "Canada",
+                "Norway"
+            ],
+            "description": "緑色から青緑色の微斜長石（アルバイトのカリウム置換体）。美しい緑色が特徴で、装飾品や研磨材として利用される。",
+            "symmetry": "三斜晶系",
+            "crystal_structure": "長石グループ",
+            "habit": [
+                "塊状",
+                "柱状",
+                "板状",
+                "正長石との連晶"
+            ],
+            "occurrence": [
+                "ペグマタイト",
+                "熱水鉱脈"
+            ],
+            "strunz_classification": "09.FA.30"
+        },
+        {
+            "id": 5,
+            "name_jp": "紫水晶",
+            "name_en": "AMETHYST",
+            "chemical_formula_html": "SiO<sub>2</sub>",
+            "origin": [
+                "Brazil",
+                "Uruguay",
+                "Zambia",
+                "Canada",
+                "USA",
+                "South Korea",
+                "Japan"
+            ],
+            "description": "紫色を呈する水晶（石英）の一種。微量の鉄イオンが放射線照射を受けることで発色すると考えられている。古くから装飾品やパワーストーンとして珍重されてきた。",
+            "symmetry": "六方晶系",
+            "crystal_structure": "石英グループ",
+            "habit": [
+                "柱状",
+                "錐状",
+                "ジオード"
+            ],
+            "occurrence": [
+                "熱水鉱脈",
+                "晶洞"
+            ],
+            "strunz_classification": "04.DA.05"
+        },
+        {
+            "id": 1,
+            "name_jp": "アメトリン",
+            "name_en": "AMETRINE",
+            "chemical_formula_html": "SiO<sub>2</sub>",
+            "origin": [
+                "Bolivia",
+                "Brazil"
+            ],
+            "description": "アメシストとシトリンが一つの結晶になったバイカラーの水晶です。紫色の部分がアメシスト、黄色の部分がシトリンに相当します。",
+            "symmetry": "六方晶系",
+            "crystal_structure": "石英グループ",
+            "habit": [
+                "塊状",
+                "柱状"
+            ],
+            "occurrence": [
+                "熱水鉱脈",
+                "ペグマタイト"
+            ],
+            "strunz_classification": "09.DA.03"
+        },
+        {
+            "id": 2,
+            "name_jp": "角閃石",
+            "name_en": "AMPHIBOLE",
+            "chemical_formula_html": "A<sub>0-1</sub>B<sub>2</sub>C<sub>5</sub>T<sub>8</sub>O<sub>22</sub>(OH,F)<sub>2</sub>",
+            "origin": [
+                "Worldwide"
+            ],
+            "description": "角閃石は、ケイ酸塩鉱物の一群で、様々な化学組成と結晶構造を持ちます。主に火成岩や変成岩中に見られ、造岩鉱物として重要です。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "角閃石グループ",
+            "habit": [
+                "柱状",
+                "針状",
+                "繊維状",
+                "塊状"
+            ],
+            "occurrence": [
+                "火成岩",
+                "変成鉱物",
+                "造岩鉱物"
+            ],
+            "strunz_classification": "09.DE"
+        },
+        {
+            "id": 3,
+            "name_jp": "菱沸石",
+            "name_en": "ANALCITE",
+            "chemical_formula_html": "NaAlSi<sub>2</sub>O<sub>6</sub>·H<sub>2</sub>O",
+            "origin": [
+                "Worldwide"
+            ],
+            "description": "菱沸石は、沸石グループに属する含水アルミノケイ酸塩鉱物です。等軸晶系の結晶で、透明または半透明の無色、白色、灰色などを呈します。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "沸石グループ",
+            "habit": [
+                "等軸晶系",
+                "塊状",
+                "粒状"
+            ],
+            "occurrence": [
+                "火成岩",
+                "堆積岩",
+                "熱水鉱脈"
+            ],
+            "strunz_classification": "09.GA.05"
+        },
+        {
+            "id": 4,
+            "name_jp": "鋭錐石",
+            "name_en": "ANATASE",
+            "chemical_formula_html": "TiO<sub>2</sub>",
+            "origin": [
+                "Worldwide"
+            ],
+            "description": "鋭錐石は、二酸化チタン（TiO<sub>2</sub>）の同質異像の一つで、正方晶系の結晶を形成します。一般的に小さな鋭い錐状の結晶で見られます。",
+            "symmetry": "正方晶系",
+            "crystal_structure": "ルチルグループ",
+            "habit": [
+                "錐状",
+                "板状",
+                "八面体"
+            ],
+            "occurrence": [
+                "熱水鉱脈",
+                "変成岩",
+                "堆積岩"
+            ],
+            "strunz_classification": "04.DD.05"
+        },
+        {
+            "id": 5,
+            "name_jp": "灰鉄柘榴石",
+            "name_en": "ANDRADITE",
+            "chemical_formula_html": "Ca<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>(SiO<sub>4</sub>)<sub>3</sub>",
+            "origin": [
+                "Worldwide"
+            ],
+            "description": "灰鉄柘榴石は、ガーネットグループに属するケイ酸塩鉱物です。カルシウムと鉄を主成分とし、通常は等軸晶系の結晶で産出します。色は黄色、緑色、褐色、黒色など様々です。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "柘榴石グループ",
+            "habit": [
+                "等軸晶系",
+                "十二面体",
+                "二十四面体",
+                "塊状"
+            ],
+            "occurrence": [
+                "スカルン",
+                "接触変成岩",
+                "蛇紋岩"
+            ],
+            "strunz_classification": "09.AD.20"
+        },
+        {
+            "id": 1,
+            "name_jp": "硫酸鉛鉱",
+            "name_en": "ANGLESITE",
+            "chemical_formula_html": "PbSO<sub>4</sub>",
+            "origin": [],
+            "description": "鉛の二次鉱物として、方鉛鉱などの硫化鉛鉱物の酸化帯に生成する。無色、白色、灰色、帯緑灰色などを呈し、ダイヤモンド光沢または樹脂光沢を持つ。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "硫酸塩グループ",
+            "habit": ["柱状", "板状", "塊状", "粒状"],
+            "occurrence": ["鉱石鉱物", "変成鉱物"],
+            "strunz_classification": "07.AD.25"
+        },
+        {
+            "id": 2,
+            "name_jp": "硬石膏",
+            "name_en": "ANHYDRITE",
+            "chemical_formula_html": "CaSO<sub>4</sub>",
+            "origin": [],
+            "description": "石膏が脱水することで生成する。無色、白色、灰色、青色などを呈し、ガラス光沢または真珠光沢を持つ。水と反応して石膏に戻る。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "硫酸塩グループ",
+            "habit": ["柱状", "板状", "塊状", "粒状", "繊維状"],
+            "occurrence": ["蒸発岩", "堆積岩", "熱水鉱脈"],
+            "strunz_classification": "07.AD.30"
+        },
+        {
+            "id": 3,
+            "name_jp": "燐灰石",
+            "name_en": "APATITE",
+            "chemical_formula_html": "Ca<sub>5</sub>(PO<sub>4</sub>)<sub>3</sub>(F,Cl,OH)",
+            "origin": [],
+            "description": "様々な色合いを持つリン酸塩鉱物グループの総称。フッ素燐灰石、塩素燐灰石、水酸燐灰石などを含む。歯や骨の主成分。",
+            "symmetry": "六方晶系",
+            "crystal_structure": "燐灰石グループ",
+            "habit": ["柱状", "六角柱状", "塊状", "粒状"],
+            "occurrence": ["火成岩", "変成岩", "堆積岩", "熱水鉱脈", "生物起源"],
+            "strunz_classification": "08.BN.05"
+        },
+        {
+            "id": 4,
+            "name_jp": "魚眼石",
+            "name_en": "APOPHYLLITE",
+            "chemical_formula_html": "KCa<sub>4</sub>Si<sub>8</sub>O<sub>20</sub>(F,OH)·8H<sub>2</sub>O",
+            "origin": [],
+            "description": "主に玄武岩の晶洞中に産する含水ケイ酸塩鉱物。無色、白色、緑色、ピンク色などを呈し、真珠光沢を持つ。加熱すると魚の眼のような光沢を示すことからこの名がついた。",
+            "symmetry": "正方晶系",
+            "crystal_structure": "アポフィライトグループ",
+            "habit": ["錐状", "正方柱状", "板状", "塊状"],
+            "occurrence": ["火成岩", "熱水鉱脈"],
+            "strunz_classification": "09.EA.15"
+        },
+        {
+            "id": 2,
+            "name_jp": "アクアマリン",
+            "name_en": "AQUAMARINE",
+            "chemical_formula_html": "Be<sub>3</sub>Al<sub>2</sub>Si<sub>6</sub>O<sub>18</sub>",
+            "origin": ["Brazil", "Madagascar", "Russia", "Pakistan", "USA"],
+            "description": "アクアマリンは、緑柱石（ベリル）という鉱物の一種で、薄い青色から緑がかった青色の宝石です。名前はラテン語の「aqua marina」（海の水の意味）に由来します。六方柱状の結晶で産出することが多く、透明度が高く美しい光沢を持つものが宝飾品として珍重されます。",
+            "symmetry": "六方晶系",
+            "crystal_structure": "ベリルグループ",
+            "habit": ["柱状", "六角柱状"],
+            "occurrence": ["ペグマタイト", "花崗岩"],
+            "strunz_classification": "09.CJ.05"
+        },
+        {
+            "id": null,
+            "name_jp": "霰石",
+            "name_en": "ARAGONITE",
+            "chemical_formula_html": "CaCO<sub>3</sub>",
+            "origin": [],
+            "description": "",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "炭酸塩グループ",
+            "habit": [],
+            "occurrence": [],
+            "strunz_classification": "05族 炭酸塩鉱物"
+        },
+        {
+            "id": null,
+            "name_jp": "硫砒鉄鉱",
+            "name_en": "ARSENOPYRITE",
+            "chemical_formula_html": "FeAsS",
+            "origin": [],
+            "description": "",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "硫化鉱物グループ",
+            "habit": [],
+            "occurrence": [],
+            "strunz_classification": "02族 硫化鉱物"
+        },
+        {
+            "id": null,
+            "name_jp": "アウゲライト",
+            "name_en": "AUGELITE",
+            "chemical_formula_html": "Al<sub>2</sub>(PO<sub>4</sub>)(OH)<sub>3</sub>",
+            "origin": [],
+            "description": "",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "リン酸塩グループ",
+            "habit": [],
+            "occurrence": [],
+            "strunz_classification": "08族 リン酸塩鉱物"
+        },
+        {
+            "id": null,
+            "name_jp": "藍銅鉱",
+            "name_en": "AZURITE",
+            "chemical_formula_html": "Cu<sub>3</sub>(CO<sub>3</sub>)<sub>2</sub>(OH)<sub>2</sub>",
+            "origin": [],
+            "description": "",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "炭酸塩グループ",
+            "habit": [],
+            "occurrence": [],
+            "strunz_classification": "05族 炭酸塩鉱物"
+        },
+        {
+            "id": 1,
+            "name_jp": "重晶石",
+            "name_en": "BARYTE",
+            "chemical_formula_html": "BaSO<sub>4</sub>",
+            "origin": ["Japan", "USA", "Germany"],
+            "description": "硫酸バリウムを主成分とする鉱物。比重が大きく、白色または淡色を呈する。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "硫酸塩グループ",
+            "habit": ["板状", "柱状", "塊状"],
+            "occurrence": ["鉱脈", "堆積岩", "温泉沈殿物"],
+            "strunz_classification": "07.A門 硫酸塩、クロム酸塩、モリブデン酸塩"
+        },
+        {
+            "id": 2,
+            "name_jp": "緑柱石",
+            "name_en": "BERYL",
+            "chemical_formula_html": "Be<sub>3</sub>Al<sub>2</sub>Si<sub>6</sub>O<sub>18</sub>",
+            "origin": ["Japan", "Brazil", "Colombia"],
+            "description": "ベリリウムとアルミニウムの珪酸塩鉱物。エメラルドやアクアマリンなどの宝石を含む。",
+            "symmetry": "六方晶系",
+            "crystal_structure": "珪酸塩鉱物",
+            "habit": ["柱状", "六角柱状"],
+            "occurrence": ["ペグマタイト", "花崗岩", "変成岩"],
+            "strunz_classification": "09族 珪酸塩鉱物"
+        },
+        {
+            "id": 3,
+            "name_jp": "ベニト石",
+            "name_en": "BENITOITE",
+            "chemical_formula_html": "BaTiSi<sub>3</sub>O<sub>9</sub>",
+            "origin": ["USA"],
+            "description": "バリウムとチタンの環状珪酸塩鉱物。青色の美しい結晶で知られる。",
+            "symmetry": "六方晶系",
+            "crystal_structure": "珪酸塩鉱物（環状珪酸塩）",
+            "habit": ["錐状", "板状"],
+            "occurrence": ["変成岩中の空隙"],
+            "strunz_classification": "09.CA門 環状珪酸塩鉱物"
+        },
+        {
+            "id": 1,
+            "name_jp": "ビューダン鉱",
+            "name_en": "BEUDANTITE",
+            "chemical_formula_html": "PbFe<sup>3+</sup><sub>3</sub>(AsO<sub>4</sub>)(SO<sub>4</sub>)(OH)<sub>6</sub>",
+            "origin": ["Germany", "USA", "France", "England", "Australia"],
+            "description": "鉛と鉄を含む硫酸塩砒酸塩鉱物。黄褐色から褐色を呈し、塊状、粒状、または小さな菱面体状の結晶で産出する。",
+            "symmetry": "三斜晶系",
+            "crystal_structure": "明礬石グループ",
+            "habit": ["塊状", "粒状", "菱面体"],
+            "occurrence": ["鉱石鉱物", "二次鉱物"],
+            "strunz_classification": "08.BL.05"
+        },
+        {
+            "id": 2,
+            "name_jp": "ビクスビー鉱",
+            "name_en": "BIXBYITE",
+            "chemical_formula_html": "(Mn<sup>3+</sup>,Fe<sup>3+</sup>)<sub>2</sub>O<sub>3</sub>",
+            "origin": ["USA", "Brazil", "India", "Madagascar", "Norway"],
+            "description": "マンガンと鉄を主成分とする酸化鉱物。黒色または暗赤色を呈し、立方体または八面体の結晶で産出する。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "コランダムグループ",
+            "habit": ["立方体", "八面体", "仮八面体"],
+            "occurrence": ["火成岩", "変成岩", "ペグマタイト"],
+            "strunz_classification": "04.CB.10"
+        },
+        {
+            "id": 1,
+            "name_jp": "ボレアイト",
+            "name_en": "BOLEITE",
+            "chemical_formula_html": "Pb<sub>26</sub>Cu<sub>24</sub>Ag<sub>9</sub>Cl<sub>62</sub>(OH)<sub>48</sub>",
+            "origin": ["Mexico", "Chile", "England", "Germany"],
+            "description": "青色の珍しい塩化鉱物。立方体の結晶や、それらが組み合わさった八面体状の結晶で産出する。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "ハロゲン化鉱物グループ",
+            "habit": ["立方体", "八面体"],
+            "occurrence": ["鉱石鉱物", "二次鉱物"],
+            "strunz_classification": "03.DD.20"
+        },
+        {
+            "id": 2,
+            "name_jp": "車骨鉱",
+            "name_en": "BOURNONITE",
+            "chemical_formula_html": "CuPbSbS<sub>3</sub>",
+            "origin": ["Romania", "Germany", "England", "USA", "Japan"],
+            "description": "灰色がかった黒色の硫化鉱物。短柱状、厚板状、または擬立方体の結晶で産出する。双晶もよく見られる。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "硫化鉱物グループ",
+            "habit": ["柱状", "板状", "擬立方体"],
+            "occurrence": ["鉱石鉱物", "熱水鉱床"],
+            "strunz_classification": "02.GB.15"
+        },
+        {
+            "id": 3,
+            "name_jp": "ブラジル石",
+            "name_en": "BRAZILIANITE",
+            "chemical_formula_html": "NaAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>4</sub>",
+            "origin": ["Brazil", "USA", "Canada"],
+            "description": "黄色から緑色のリン酸塩鉱物。劈開が完全で、ガラス光沢を持つ。柱状またはプリズム状の結晶で産出する。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "リン酸塩鉱物グループ",
+            "habit": ["柱状", "プリズム状"],
+            "occurrence": ["ペグマタイト"],
+            "strunz_classification": "08.DC.05"
+        },
+        {
+            "id": 4,
+            "name_jp": "ブロシャン銅鉱",
+            "name_en": "BROCHANTITE",
+            "chemical_formula_html": "Cu<sub>4</sub>(SO<sub>4</sub>)(OH)<sub>6</sub>",
+            "origin": ["Germany", "Slovakia", "USA", "Chile"],
+            "description": "鮮やかな緑色の硫酸塩鉱物。針状、柱状、または板状の結晶で産出する。塊状や粉末状の集合体としても見られる。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "硫酸塩グループ",
+            "habit": ["針状", "柱状", "板状", "塊状", "粉末状"],
+            "occurrence": ["鉱石鉱物", "二次鉱物", "銅鉱床の酸化帯"],
+            "strunz_classification": "07.BB.55"
+        },
+        {
+            "id": 5,
+            "name_jp": "板チタン石",
+            "name_en": "BROOKITE",
+            "chemical_formula_html": "TiO<sub>2</sub>",
+            "origin": ["USA", "Switzerland", "Wales", "Brazil"],
+            "description": "褐色、赤褐色、または黒色の酸化チタン鉱物。鋭い稜を持つ板状または短柱状の結晶で産出する。ルチルやアナテースの同質異像。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "酸化鉱物グループ",
+            "habit": ["板状", "短柱状"],
+            "occurrence": ["変成岩", "堆積岩", "熱水鉱脈"],
+            "strunz_classification": "04.DD.05"
+        },              
+        {
+            "id": 1,
+            "name_jp": "ボレアイト",
+            "name_en": "BOLEITE",
+            "chemical_formula_html": "Pb<sub>26</sub>Cu<sub>24</sub>Ag<sub>9</sub>Cl<sub>62</sub>(OH)<sub>48</sub>",
+            "origin": ["Mexico", "Chile", "England", "Germany"],
+            "description": "青色の珍しい塩化鉱物。立方体の結晶や、それらが組み合わさった八面体状の結晶で産出する。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "ハロゲン化鉱物グループ",
+            "habit": ["立方体", "八面体"],
+            "occurrence": ["鉱石鉱物", "二次鉱物"],
+            "strunz_classification": "03.DD.20"
+        },
+        {
+            "id": 2,
+            "name_jp": "車骨鉱",
+            "name_en": "BOURNONITE",
+            "chemical_formula_html": "CuPbSbS<sub>3</sub>",
+            "origin": ["Romania", "Germany", "England", "USA", "Japan"],
+            "description": "灰色がかった黒色の硫化鉱物。短柱状、厚板状、または擬立方体の結晶で産出する。双晶もよく見られる。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "硫化鉱物グループ",
+            "habit": ["柱状", "板状", "擬立方体"],
+            "occurrence": ["鉱石鉱物", "熱水鉱床"],
+            "strunz_classification": "02.GB.15"
+        },
+        {
+            "id": 3,
+            "name_jp": "ブラジル石",
+            "name_en": "BRAZILIANITE",
+            "chemical_formula_html": "NaAl<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>(OH)<sub>4</sub>",
+            "origin": ["Brazil", "USA", "Canada"],
+            "description": "黄色から緑色のリン酸塩鉱物。劈開が完全で、ガラス光沢を持つ。柱状またはプリズム状の結晶で産出する。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "リン酸塩鉱物グループ",
+            "habit": ["柱状", "プリズム状"],
+            "occurrence": ["ペグマタイト"],
+            "strunz_classification": "08.DC.05"
+        },
+        {
+            "id": 4,
+            "name_jp": "ブロシャン銅鉱",
+            "name_en": "BROCHANTITE",
+            "chemical_formula_html": "Cu<sub>4</sub>(SO<sub>4</sub>)(OH)<sub>6</sub>",
+            "origin": ["Germany", "Slovakia", "USA", "Chile"],
+            "description": "鮮やかな緑色の硫酸塩鉱物。針状、柱状、または板状の結晶で産出する。塊状や粉末状の集合体としても見られる。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "硫酸塩グループ",
+            "habit": ["針状", "柱状", "板状", "塊状", "粉末状"],
+            "occurrence": ["鉱石鉱物", "二次鉱物", "銅鉱床の酸化帯"],
+            "strunz_classification": "07.BB.55"
+        },
+        {
+            "id": 5,
+            "name_jp": "板チタン石",
+            "name_en": "BROOKITE",
+            "chemical_formula_html": "TiO<sub>2</sub>",
+            "origin": ["USA", "Switzerland", "Wales", "Brazil"],
+            "description": "褐色、赤褐色、または黒色の酸化チタン鉱物。鋭い稜を持つ板状または短柱状の結晶で産出する。ルチルやアナテースの同質異像。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "酸化鉱物グループ",
+            "habit": ["板状", "短柱状"],
+            "occurrence": ["変成岩", "堆積岩", "熱水鉱脈"],
+            "strunz_classification": "04.DD.05"
+        },
+        {
+            "id": null,
+            "name_jp": "カロール鉱",
+            "name_en": "CARROLLITE",
+            "chemical_formula_html": "CuFe<sub>2</sub>S<sub>4</sub>",
+            "origin": [],
+            "description": "銅と鉄の硫化鉱物。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "硫化鉱物グループ",
+            "habit": ["粒状"],
+            "occurrence": ["鉱石鉱物"],
+            "strunz_classification": "02族 硫化物および硫化鉱物"
+        },
+        {
+            "id": null,
+            "name_jp": "カバンシ石",
+            "name_en": "CAVANSITE",
+            "chemical_formula_html": "Ca(VO)Si<sub>4</sub>O<sub>10</sub>・4H<sub>2</sub>O",
+            "origin": [],
+            "description": "バナジウムを含む珍しい珪酸塩鉱物。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "珪酸塩鉱物グループ",
+            "habit": ["柱状", "球状"],
+            "occurrence": ["鉱石鉱物"],
+            "strunz_classification": "09族 珪酸塩鉱物"
+        },
+        {
+            "id": null,
+            "name_jp": "白鉛鉱",
+            "name_en": "CERUSSITE",
+            "chemical_formula_html": "PbCO<sub>3</sub>",
+            "origin": [],
+            "description": "鉛の炭酸塩鉱物。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "炭酸塩グループ",
+            "habit": ["柱状", "板状", "双晶"],
+            "occurrence": ["鉱石鉱物", "変成鉱物"],
+            "strunz_classification": "05族 炭酸塩鉱物および硝酸塩鉱物"
+        },
+        {
+            "id": null,
+            "name_jp": "玉髄",
+            "name_en": "CHALCEDONY",
+            "chemical_formula_html": "SiO<sub>2</sub>",
+            "origin": [],
+            "description": "微細な石英の集合体。",
+            "symmetry": "六方晶系（潜晶質）",
+            "crystal_structure": "石英グループ",
+            "habit": ["塊状", "球状", "鍾乳状"],
+            "occurrence": ["鉱石鉱物"],
+            "strunz_classification": "04族 酸化物および水酸化物"
+        },
+        {
+            "id": null,
+            "name_jp": "黄銅鉱",
+            "name_en": "CHALCOPYRITE",
+            "chemical_formula_html": "CuFeS<sub>2</sub>",
+            "origin": ["Japan", "USA", "Canada", "Germany", "Peru", "Mexico"],
+            "description": "銅と鉄の硫化鉱物で、黄色の金属光沢を持つ。主要な銅の鉱石鉱物の一つ。",
+            "symmetry": "正方晶系",
+            "crystal_structure": "黄銅鉱グループ",
+            "habit": ["塊状", "粒状", "正四面体", "双晶"],
+            "occurrence": ["鉱石鉱物", "熱水鉱床", "スカルン鉱床", "堆積岩"],
+            "strunz_classification": "02.CB.10"
+        },
+        {
+            "id": null,
+            "name_jp": "千代子鉱",
+            "name_en": "CHIYOKOITE",
+            "chemical_formula_html": "Ag<sub>2</sub>CuPbBiS<sub>4</sub>",
+            "origin": ["Japan (Chiba Prefecture)"],
+            "description": "千葉県で発見された比較的稀な硫化鉱物。鉛、ビスマス、銅、銀を含む。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "不明 (記載が見当たらないため)",
+            "habit": ["針状"],
+            "occurrence": ["熱水鉱床"],
+            "strunz_classification": "02.JB.35"
+        },
+        {
+            "id": null,
+            "name_jp": "緑泥石",
+            "name_en": "CHLORITE GROUP",
+            "chemical_formula_html": "(Mg,Fe,Al)<sub>6</sub>(Si,Al)<sub>4</sub>O<sub>10</sub>(OH)<sub>8</sub>",
+            "origin": ["Worldwide"],
+            "description": "マグネシウム、鉄、アルミニウムを含む含水珪酸塩鉱物のグループ名。緑色を呈し、劈開が完全。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "緑泥石グループ",
+            "habit": ["葉片状", "鱗片状", "塊状", "土状"],
+            "occurrence": ["変成岩", "熱水変質", "堆積岩"],
+            "strunz_classification": "09.EC.05"
+        },
+        {
+            "id": null,
+            "name_jp": "金緑石",
+            "name_en": "CHRYSOBERYL",
+            "chemical_formula_html": "BeAl<sub>2</sub>O<sub>4</sub>",
+            "origin": ["Brazil", "Russia", "Sri Lanka", "Madagascar", "USA", "Japan"],
+            "description": "ベリリウムとアルミニウムの酸化鉱物。硬度が高く、黄色、緑色、褐色などを呈する。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "スピネルグループ (逆スピネル構造)",
+            "habit": ["柱状", "板状", "短柱状", "双晶"],
+            "occurrence": ["ペグマタイト", "変成岩", "砂鉱床"],
+            "strunz_classification": "04.AA.08"
+        },
+        {
+            "id": null,
+            "name_jp": "珪孔雀石",
+            "name_en": "CHRYSOCOLLA",
+            "chemical_formula_html": "(Cu,Al)<sub>2</sub>H<sub>2</sub>Si<sub>2</sub>O<sub>5</sub>(OH,O)<sub>4</sub>・nH<sub>2</sub>O",
+            "origin": ["USA", "Chile", "Peru", "Democratic Republic of the Congo", "Israel", "UK"],
+            "description": "含水珪酸銅鉱物で、美しい青緑色を呈する。二次鉱物として銅鉱床の酸化帯に産出する。",
+            "symmetry": "非晶質 (または隠微晶質)",
+            "crystal_structure": "層状珪酸塩グループ (構造は議論中)",
+            "habit": ["塊状", "皮膜状", "腎臓状", "球状", "土状"],
+            "occurrence": ["鉱石鉱物", "二次鉱物", "銅鉱床酸化帯"],
+            "strunz_classification": "09.ED.20"
+        },
+        {
+            "id": 1,
+            "name_jp": "辰砂",
+            "name_en": "CINNABAR",
+            "chemical_formula_html": "HgS",
+            "origin": ["Japan", "China", "Spain", "Italy", "USA"],
+            "description": "硫化水銀(II)からなる鉱物。鮮やかな赤色が特徴で、古くから顔料や水銀の原料として利用されてきた。",
+            "symmetry": "三方晶系",
+            "crystal_structure": "硫化鉱物グループ",
+            "habit": ["塊状", "粒状", "柱状", "菱面体"],
+            "occurrence": ["鉱石鉱物", "熱水鉱床"],
+            "strunz_classification": "02.CD.05"
+        },
+        {
+            "id": 5,
+            "name_jp": "コランダム",
+            "name_en": "CORUNDUM",
+            "chemical_formula_html": "Al<sub>2</sub>O<sub>3</sub>",
+            "origin": ["Myanmar", "Sri Lanka", "Thailand", "Australia", "USA"],
+            "description": "酸化アルミニウムの結晶。硬度が非常に高く、ルビーやサファイアといった宝石としても知られる。",
+            "symmetry": "三方晶系",
+            "crystal_structure": "酸化鉱物グループ",
+            "habit": ["柱状", "樽型", "板状", "粒状"],
+            "occurrence": ["変成岩", "火成岩", "漂砂鉱床"],
+            "strunz_classification": "04.CB.05"
+        },
+        {
+            "id": null,
+            "name_jp": "クリノクローゼ",
+            "name_en": "CLINOCLASE",
+            "chemical_formula_html": "Cu<sub>3</sub>(AsO<sub>4</sub>)(OH)<sub>3</sub>",
+            "origin": ["Germany", "England", "USA"],
+            "description": "濃い青色から緑青色の単斜晶系の希産鉱物。銅の二次鉱物として、酸化帯で見られる。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": null,
+            "habit": ["針状", "板状", "繊維状", "塊状"],
+            "occurrence": ["鉱石鉱物", "変成鉱物"],
+            "strunz_classification": "08.BE.10"
+        },
+        {
+            "id": null,
+            "name_jp": "コールマン石",
+            "name_en": "COLEMANITE",
+            "chemical_formula_html": "Ca<sub>2</sub>B<sub>6</sub>O<sub>11</sub>·5H<sub>2</sub>O",
+            "origin": ["USA", "Turkey", "Argentina"],
+            "description": "無色または白色の単斜晶系のホウ酸塩鉱物。堆積岩中の蒸発岩鉱床で形成される。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "炭酸塩グループ",
+            "habit": ["柱状", "短柱状", "粒状", "塊状"],
+            "occurrence": ["堆積岩"],
+            "strunz_classification": "06.CB.10"
+        },
+        {
+            "id": null,
+            "name_jp": "銅",
+            "name_en": "COPPER",
+            "chemical_formula_html": "Cu",
+            "origin": ["USA", "Chile", "Zambia"],
+            "description": "赤みを帯びた金属光沢を持つ等軸晶系の元素鉱物。熱と電気の良導体として広く利用される。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "元素鉱物グループ",
+            "habit": ["立方体", "八面体", "樹枝状", "塊状", "粒状"],
+            "occurrence": ["火成岩", "変成鉱物", "鉱脈"],
+            "strunz_classification": "01.AA.05"
+        },
+        {
+            "id": 1,
+            "name_jp": "クリード石",
+            "name_en": "CREEDITE",
+            "chemical_formula_html": "Ca<sub>3</sub>Al<sub>2</sub>F<sub>4</sub>(OH,F)<sub>6</sub>(SO<sub>4</sub>)・2H<sub>2</sub>O",
+            "origin": ["USA", "Mexico", "Kazakhstan"],
+            "description": "フッ化物と硫酸塩を含む珍しい鉱物。透明または半透明で、無色、白色、紫色などを呈します。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "独立四面体型",
+            "habit": ["柱状", "針状", "塊状"],
+            "occurrence": ["熱水鉱床の酸化帯"],
+            "strunz_classification": "07.D門 硫酸塩・クロム酸塩・モリブデン酸塩鉱物"
+            },
+            {
+            "id": 2,
+            "name_jp": "クリストバル石",
+            "name_en": "CRISTOBALITE",
+            "chemical_formula_html": "SiO<sub>2</sub>",
+            "origin": ["USA", "Mexico", "Japan"],
+            "description": "高温型の二酸化ケイ素（シリカ）鉱物の一種。準安定相であり、低温では徐々に石英に転移します。火山岩や隕石中に見られます。",
+            "symmetry": "正方晶系",
+            "crystal_structure": "石英グループ",
+            "habit": ["球状", "放射状", "微細な結晶の集合"],
+            "occurrence": ["火成岩", "変成岩", "隕石"],
+            "strunz_classification": "04.DA門 酸化物鉱物"
+            },
+            {
+            "id": 3,
+            "name_jp": "曹長石",
+            "name_en": "CLEAVELANDITE",
+            "chemical_formula_html": "NaAlSi<sub>3</sub>O<sub>8</sub>",
+            "origin": ["USA", "Brazil", "Italy"],
+            "description": "アルバイト（曹長石）の板状または葉片状の形態を示す変種。白色で真珠光沢を持ちます。",
+            "symmetry": "三斜晶系",
+            "crystal_structure": "長石グループ",
+            "habit": ["板状", "葉片状"],
+            "occurrence": ["ペグマタイト"],
+            "strunz_classification": "09.FA門 テクト珪酸塩鉱物"
+            },
+            {
+            "id": 4,
+            "name_jp": "斜緑泥石",
+            "name_en": "CLINOCHLORE",
+            "chemical_formula_html": "(Mg,Fe)<sub>5</sub>Al(Si<sub>3</sub>Al)O<sub>10</sub>(OH)<sub>8</sub>",
+            "origin": ["USA", "Canada", "Switzerland"],
+            "description": "緑泥石グループに属するマグネシウムとアルミニウムを主成分とする含水珪酸塩鉱物。葉片状または繊維状で、緑色を呈します。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "緑泥石グループ",
+            "habit": ["葉片状", "板状", "繊維状"],
+            "occurrence": ["変成岩", "熱水変質鉱床"],
+            "strunz_classification": "09.EC門 層状珪酸塩鉱物"
+            },
+            {
+            "id": 5,
+            "name_jp": "赤銅鉱",
+            "name_en": "CUPRITE",
+            "chemical_formula_html": "Cu<sub>2</sub>O",
+            "origin": ["USA", "Namibia", "England"],
+            "description": "酸化銅(I)からなる鉱物で、深赤色から暗赤色を呈します。しばしば八面体や立方体の結晶として産出します。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "立方晶系",
+            "habit": ["立方体", "八面体", "塊状", "繊維状"],
+            "occurrence": ["銅鉱床の酸化帯"],
+            "strunz_classification": "04.AA門 単純酸化物"
+            },
+            {
+            "id": 1,
+            "name_jp": "ダンブリ石",
+            "name_en": "DANBURITE",
+            "chemical_formula_html": "CaB<sub>2</sub>(SiO<sub>4</sub>)<sub>2</sub>",
+            "origin": ["Japan", "Mexico", "USA"],
+            "description": "ダンブリ石は、カルシウムとホウ素のケイ酸塩鉱物です。通常は無色または白色ですが、黄色やピンク色を帯びることもあります。正方柱状の結晶や塊状で産出します。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "珪酸塩鉱物",
+            "habit": ["柱状", "塊状"],
+            "occurrence": ["接触鉱物", "熱水鉱床"],
+            "strunz_classification": "08.AA門 テクトホウ酸塩"
+        },
+        {
+            "id": 3,
+            "name_jp": "ダイヤモンド/金剛石",
+            "name_en": "DIAMOND",
+            "chemical_formula_html": "C",
+            "origin": ["South Africa", "Russia", "Botswana", "Canada", "Australia"],
+            "description": "ダイヤモンドは、炭素の同素体の一つであり、非常に高い硬度と光沢を持つことで知られています。通常は八面体または立方体の結晶で産出します。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "元素鉱物",
+            "habit": ["八面体", "立方体", "十二面体"],
+            "occurrence": ["キンバーライト", "ランプロアイト", "変成岩"],
+            "strunz_classification": "01.CB門 金属炭化物・窒化物・リン化物"
+        },
+        {
+            "id": 4,
+            "name_jp": "ダイアスポア",
+            "name_en": "DIASPORE",
+            "chemical_formula_html": "AlO(OH)",
+            "origin": ["Turkey", "Russia", "South Africa", "Greece", "USA"],
+            "description": "ダイアスポアは、アルミニウムの酸化水酸化鉱物です。通常は無色、白色、灰色、黄色、緑色、ピンク色などを呈し、板状、柱状、鱗片状などの結晶で産出します。強い劈開を持つことが特徴です。",
+            "symmetry": "斜方晶系",
+            "crystal_structure": "水酸化鉱物",
+            "habit": ["板状", "柱状", "鱗片状"],
+            "occurrence": ["ボーキサイト鉱床", "変成岩"],
+            "strunz_classification": "04.FD門 酸化水酸化物"
+        },
+        {
+            "id": 5,
+            "name_jp": "透輝石",
+            "name_en": "DIOPSIDE",
+            "chemical_formula_html": "CaMgSi<sub>2</sub>O<sub>6</sub>",
+            "origin": ["Italy", "Canada", "Russia", "Finland", "USA"],
+            "description": "透輝石は、カルシウムとマグネシウムのイノケイ酸塩鉱物（単鎖状珪酸塩鉱物）です。通常は無色、白色、灰色、緑色などを呈し、柱状、粒状、塊状などの結晶で産出します。劈開は二方向に明瞭です。",
+            "symmetry": "単斜晶系",
+            "crystal_structure": "輝石グループ",
+            "habit": ["柱状", "粒状", "塊状"],
+            "occurrence": ["変成岩", "火成岩", "スカルン"],
+            "strunz_classification": "09.DA門 単鎖イノ珪酸塩"
+        },
+        {
+            "id": 1,
+            "name_jp": "デマントイド",
+            "name_en": "DEMANTOID",
+            "chemical_formula_html": "Ca<sub>3</sub>Fe<sup>3+</sup><sub>2</sub>(SiO<sub>4</sub>)<sub>3</sub>",
+            "origin": [
+            "Russia",
+            "Italy",
+            "Iran",
+            "Namibia",
+            "Madagascar"
+            ],
+            "description": "緑色の透明なアンドラダイト（灰鉄柘榴石）の変種で、宝石として珍重されます。ダイヤモンドのような強い分散光を示すことからこの名が付けられました。",
+            "symmetry": "等軸晶系",
+            "crystal_structure": "柘榴石グループ",
+            "habit": [
+            "菱形十二面体",
+            "正二十四面体",
+            "塊状"
+            ],
+            "occurrence": [
+            "変成鉱物",
+            "接触鉱物"
+            ],
+            "strunz_classification": "09.AD.25"
         }
+        
     ]
 };
 
