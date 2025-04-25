@@ -201,6 +201,13 @@ body {
     margin: 0;
 }
 
+/* 日本語名のスタイルを追加 */
+.mineral-name-jp {
+    white-space: nowrap; /* 折り返しを防ぐ */
+    overflow: hidden; /* はみ出した部分を隠す */
+    font-size: clamp(0.7em, 2vw, 0.9em); /* 文字サイズを自動調整（最小0.7em、最大0.9em） */
+}
+
 .mineral-name-jp {
     font-size: 0.9em;
     color: var(--secondary-color);
