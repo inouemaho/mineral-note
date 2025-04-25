@@ -50,7 +50,7 @@ body {
         max-height: calc(100vh - env(safe-area-inset-top));
         margin: env(safe-area-inset-top) 0 0 0;
         border-radius: 0;
-        padding-top: calc(20px + env(safe-area-inset-top));
+        padding: calc(40px + env(safe-area-inset-top)) 20px 20px 20px;
     }
 
     .modal__header {
@@ -88,6 +88,10 @@ body {
     .mineral-image {
         top: 0;
         right: 20px;
+    }
+
+    .detail-header {
+        padding-top: 20px;
     }
 }
 
@@ -291,7 +295,6 @@ body {
     font-size: 1.2em;
     margin: 20px 0;
     padding: 10px;
-    background-color: #f8f9fa;
     border-radius: 4px;
 }
 
@@ -414,7 +417,7 @@ body.has-modal {
         max-height: calc(100vh - env(safe-area-inset-top));
         margin: env(safe-area-inset-top) 0 0 0;
         border-radius: 0;
-        padding-top: calc(20px + env(safe-area-inset-top));
+        padding-top: calc(40px + env(safe-area-inset-top));
     }
 
     .modal__close {
@@ -436,5 +439,9 @@ body.has-modal {
     .mineral-image {
         top: 0;
         right: 20px;
+    }
+
+    .detail-header {
+        padding-top: 30px;
     }
 }
