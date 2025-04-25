@@ -50,7 +50,7 @@ body {
         max-height: calc(100vh - env(safe-area-inset-top));
         margin: env(safe-area-inset-top) 0 0 0;
         border-radius: 0;
-        padding: calc(40px + env(safe-area-inset-top)) 20px 20px 20px;
+        padding: calc(60px + env(safe-area-inset-top)) 20px 20px 20px; /* パディングを増やす */
     }
 
     .modal__header {
@@ -86,12 +86,12 @@ body {
     }
 
     .mineral-image {
-        top: 0;
+        top: 40px; /* detail-headerのpadding-topと同じ値に設定 */
         right: 20px;
     }
 
     .detail-header {
-        padding-top: 20px;
+        padding-top: 40px; /* デスクトップと同じ値に設定 */
     }
 }
 
@@ -265,22 +265,22 @@ body {
     align-items: flex-start;
     margin-bottom: 20px;
     position: relative;
+    padding-top: 40px; /* パディングを増やして全体を下げる */
 }
 
 .name-container {
     flex-grow: 1;
-    margin-right: 100px; /* 画像の幅 + 余白分 */
+    margin-right: 170px; /* 画像の幅(150px) + 余白(20px) */
 }
 
 .mineral-image {
     position: absolute;
-    top: 0;
+    top: 40px; /* detail-headerのpadding-topと同じ値に設定 */
     right: 20px;
     width: 150px;
     height: 150px;
     overflow: hidden;
     border-radius: 4px;
-    /* background-color: #f8f9fa; */
 }
 
 .mineral-image img {
@@ -437,11 +437,11 @@ body.has-modal {
     }
 
     .mineral-image {
-        top: 0;
+        top: 40px; /* detail-headerのpadding-topと同じ値に設定 */
         right: 20px;
     }
 
     .detail-header {
-        padding-top: 30px;
+        padding-top: 40px; /* デスクトップと同じ値に設定 */
     }
 }
