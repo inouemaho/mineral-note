@@ -38,6 +38,17 @@ class ModalManager {
         // 詳細情報を設定
         document.querySelector('#modal-detail .mineral-name-en').textContent = mineral.name_en;
         document.querySelector('#modal-detail .mineral-name-jp').textContent = mineral.name_jp;
+
+        // 画像の設定
+        const imageContainer = document.querySelector('#modal-detail .mineral-image');
+        imageContainer.innerHTML = ''; // 既存の画像をクリア
+        if (mineral.images && mineral.images.length > 0) {
+            const img = document.createElement('img');
+            img.src = mineral.images[0]; // 最初の画像を表示
+            img.alt = mineral.name_en;
+            imageContainer.appendChild(img);
+        }
+
         document.querySelector('#modal-detail .chemical-formula').innerHTML = mineral.chemical_formula_html;
         document.querySelector('#modal-detail .strunz').textContent = mineral.strunz_classification;
         document.querySelector('#modal-detail .description').textContent = mineral.description;

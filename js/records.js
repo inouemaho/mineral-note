@@ -4152,7 +4152,8 @@ const MINERALS_DATA = {
             "crystal_structure": "硫化鉱物グループ",
             "habit": ["柱状", "針状", "板状", "塊状", "樹枝状"],
             "occurrence": ["熱水鉱脈"],
-            "strunz_classification": "02.BA.05"
+            "strunz_classification": "02.BA.05",
+            "images": ["./images/minerals/acanthite.png"]
           },
           {
             "id": 1,
