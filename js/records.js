@@ -705,7 +705,8 @@ const MINERALS_DATA = {
             "crystal_structure": "トルマリン・グループ",
             "habit": ["柱状", "針状"],
             "occurrence": ["ペグマタイト"],
-            "strunz_classification": "09.CK.05"
+            "strunz_classification": "09.CK.05",
+            "images": ["images/minerals/achroite.png"]
         },
         {
             "id": 62,
