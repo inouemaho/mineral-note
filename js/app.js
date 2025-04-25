@@ -15,29 +15,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         // データベースの初期化
         await db.initialize();
 
-        // アルファベット索引の生成
         const alphabetIndexContainer = document.getElementById('alphabet-index');
-        modalManager.createAlphabetIndex(alphabetIndexContainer);
-
-        // 鉱物リストの生成
         const mineralsListContainer = document.getElementById('minerals-list');
+
+        modalManager.createAlphabetIndex(alphabetIndexContainer);
         await modalManager.createMineralsList(mineralsListContainer);
-
-        // 詳細モーダルでのいいねボタンのイベント設定
-        const detailLikeButton = document.querySelector('#modal-detail .detail-like-button');
-        detailLikeButton.addEventListener('click', async () => {
-            const nameEn = modalManager.currentMineralNameEn;
-            if (nameEn) {
-                const newLikes = await db.toggleLike(nameEn);
-                detailLikeButton.classList.toggle('active', newLikes.has(nameEn));
-
-                // リスト表示のいいねボタンも更新
-                const listLikeButton = document.querySelector(`.minerals-list .like-button[data-mineral-name="${nameEn}"]`);
-                if (listLikeButton) {
-                    listLikeButton.classList.toggle('active', newLikes.has(nameEn));
-                }
-            }
-        });
 
     } catch (error) {
         console.error('アプリケーションの初期化に失敗しました:', error);

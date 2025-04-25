@@ -49,6 +49,7 @@ class ModalManager {
             imageContainer.appendChild(img);
         }
 
+        // その他の情報を設定
         document.querySelector('#modal-detail .chemical-formula').innerHTML = mineral.chemical_formula_html;
         document.querySelector('#modal-detail .strunz').textContent = mineral.strunz_classification;
         document.querySelector('#modal-detail .description').textContent = mineral.description;
@@ -56,11 +57,6 @@ class ModalManager {
         document.querySelector('#modal-detail .crystal-structure').textContent = mineral.crystal_structure;
         document.querySelector('#modal-detail .habit').textContent = mineral.habit.join(', ');
         document.querySelector('#modal-detail .occurrence').textContent = mineral.occurrence.join(', ');
-
-        // いいねボタンの状態を設定
-        const isLiked = await db.isLiked(nameEn);
-        const likeButton = document.querySelector('#modal-detail .detail-like-button');
-        likeButton.classList.toggle('active', isLiked);
 
         // モーダルを表示
         const detailModal = document.getElementById('modal-detail');

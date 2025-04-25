@@ -82,7 +82,7 @@ body {
     }
 
     .name-container {
-        padding-right: 120px; /* モバイルでも画像用のスペースを維持 */
+        padding-right: 100px; /* モバイルでも画像用のスペースを維持 */
     }
 
     .mineral-image {
@@ -265,19 +265,15 @@ body {
 
 .name-container {
     flex-grow: 1;
-    margin-right: 120px; /* 画像の幅 + 余白分 */
-}
-
-.detail-like-button {
-    font-size: 2em;
+    margin-right: 100px; /* 画像の幅 + 余白分 */
 }
 
 .mineral-image {
     position: absolute;
     top: 0;
     right: 20px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     overflow: hidden;
     border-radius: 4px;
     background-color: #f8f9fa;
@@ -286,7 +282,8 @@ body {
 .mineral-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
 }
 
 .chemical-formula {
@@ -433,7 +430,7 @@ body.has-modal {
     }
 
     .name-container {
-        padding-right: 120px; /* モバイルでも画像用のスペースを維持 */
+        padding-right: 100px; /* モバイルでも画像用のスペースを維持 */
     }
 
     .mineral-image {
