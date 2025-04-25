@@ -1,7 +1,7 @@
 // モーダル管理
 class ModalManager {
     constructor() {
-        this.currentMineralId = null;
+        this.currentMineralNameEn = null;
         this.initializeModals();
     }
 
@@ -30,9 +30,9 @@ class ModalManager {
     }
 
     // 詳細モーダルを表示
-    async showMineralDetail(mineralId) {
-        this.currentMineralId = mineralId;
-        const mineral = getMineralById(mineralId);
+    async showMineralDetail(nameEn) {
+        this.currentMineralNameEn = nameEn;
+        const mineral = getMineralByNameEn(nameEn);
         if (!mineral) return;
 
         // 詳細情報を設定
@@ -47,7 +47,7 @@ class ModalManager {
         document.querySelector('#modal-detail .occurrence').textContent = mineral.occurrence.join(', ');
 
         // いいねボタンの状態を設定
-        const isLiked = await db.isLiked(mineralId);
+        const isLiked = await db.isLiked(nameEn);
         const likeButton = document.querySelector('#modal-detail .detail-like-button');
         likeButton.classList.toggle('active', isLiked);
 
@@ -187,13 +187,13 @@ class ModalManager {
             }
 
             html += `
-                <div class="mineral-item" data-mineral-id="${mineral.id}">
+                <div class="mineral-item" data-mineral-name="${mineral.name_en}">
                     <div class="mineral-names">
                         <div class="mineral-name-en">${mineral.name_en}</div>
                         <div class="mineral-name-jp">${mineral.name_jp}</div>
                     </div>
-                    <button class="like-button ${likes.has(mineral.id) ? 'active' : ''}" 
-                            data-mineral-id="${mineral.id}" 
+                    <button class="like-button ${likes.has(mineral.name_en) ? 'active' : ''}" 
+                            data-mineral-name="${mineral.name_en}" 
                             aria-label="いいね">♥</button>
                 </div>
             `;
@@ -208,18 +208,18 @@ class ModalManager {
 
             if (likeButton) {
                 e.stopPropagation();
-                const mineralId = parseInt(likeButton.dataset.mineralId);
-                const newLikes = await db.toggleLike(mineralId);
+                const nameEn = likeButton.dataset.mineralName;
+                const newLikes = await db.toggleLike(nameEn);
                 likeButton.classList.toggle('active');
 
                 // 詳細モーダルのいいねボタンも更新
-                if (this.currentMineralId === mineralId) {
+                if (this.currentMineralNameEn === nameEn) {
                     const detailLikeButton = document.querySelector('#modal-detail .detail-like-button');
-                    detailLikeButton.classList.toggle('active', newLikes.has(mineralId));
+                    detailLikeButton.classList.toggle('active', newLikes.has(nameEn));
                 }
             } else if (mineralItem) {
-                const mineralId = parseInt(mineralItem.dataset.mineralId);
-                this.showMineralDetail(mineralId);
+                const nameEn = mineralItem.dataset.mineralName;
+                this.showMineralDetail(nameEn);
             }
         });
     }

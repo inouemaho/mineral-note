@@ -52,15 +52,15 @@ class MineralDatabase {
     }
 
     // いいねの追加/削除
-    async toggleLike(mineralId) {
+    async toggleLike(nameEn) {
         try {
             const likes = await this.getLikes();
             const likeSet = new Set(likes);
 
-            if (likeSet.has(mineralId)) {
-                likeSet.delete(mineralId);
+            if (likeSet.has(nameEn)) {
+                likeSet.delete(nameEn);
             } else {
-                likeSet.add(mineralId);
+                likeSet.add(nameEn);
             }
 
             await this.likesStore.setItem('likes', likeSet);
@@ -72,10 +72,10 @@ class MineralDatabase {
     }
 
     // 特定の鉱物がいいね済みかチェック
-    async isLiked(mineralId) {
+    async isLiked(nameEn) {
         try {
             const likes = await this.getLikes();
-            return likes.has(mineralId);
+            return likes.has(nameEn);
         } catch (error) {
             console.error('いいね状態の確認に失敗しました:', error);
             return false;

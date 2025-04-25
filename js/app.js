@@ -1,6 +1,17 @@
 // アプリケーションの初期化
 document.addEventListener('DOMContentLoaded', async () => {
     try {
+        // 鉱物データの重複を排除し、最初に出現したレコードのみを使用
+        const uniqueMinerals = {};
+        MINERALS_DATA.minerals.forEach(mineral => {
+            if (!uniqueMinerals[mineral.name_en]) {
+                uniqueMinerals[mineral.name_en] = mineral;
+            }
+        });
+
+        // 重複を排除したデータを配列に戻す
+        MINERALS_DATA.minerals = Object.values(uniqueMinerals);
+
         // データベースの初期化
         await db.initialize();
 
@@ -15,15 +26,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         // 詳細モーダルでのいいねボタンのイベント設定
         const detailLikeButton = document.querySelector('#modal-detail .detail-like-button');
         detailLikeButton.addEventListener('click', async () => {
-            const mineralId = modalManager.currentMineralId;
-            if (mineralId) {
-                const newLikes = await db.toggleLike(mineralId);
-                detailLikeButton.classList.toggle('active', newLikes.has(mineralId));
+            const nameEn = modalManager.currentMineralNameEn;
+            if (nameEn) {
+                const newLikes = await db.toggleLike(nameEn);
+                detailLikeButton.classList.toggle('active', newLikes.has(nameEn));
 
                 // リスト表示のいいねボタンも更新
-                const listLikeButton = document.querySelector(`.minerals-list .like-button[data-mineral-id="${mineralId}"]`);
+                const listLikeButton = document.querySelector(`.minerals-list .like-button[data-mineral-name="${nameEn}"]`);
                 if (listLikeButton) {
-                    listLikeButton.classList.toggle('active', newLikes.has(mineralId));
+                    listLikeButton.classList.toggle('active', newLikes.has(nameEn));
                 }
             }
         });
