@@ -68,3 +68,14 @@ window.addEventListener('offline', () => {
 window.addEventListener('online', () => {
     console.log('オンラインモードに復帰しました');
 });
+
+// トップスクロールボタンの機能
+document.getElementById('scroll-top').addEventListener('click', () => {
+    const modalContainer = document.querySelector('.modal.is-open .modal__container');
+    if (modalContainer) {
+        modalContainer.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+});
