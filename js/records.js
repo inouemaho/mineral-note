@@ -719,7 +719,9 @@ const MINERALS_DATA = {
             "crystal_structure": "角閃石グループ",
             "habit": ["柱状", "針状", "繊維状"],
             "occurrence": ["変成鉱物"],
-            "strunz_classification": "09.DE.05"
+            "strunz_classification": "09.DE.05",
+            "images": ["images/minerals/actinolite.png"]
+
         },
         {
             "id": null,
