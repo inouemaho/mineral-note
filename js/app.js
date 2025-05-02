@@ -21,6 +21,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         modalManager.createAlphabetIndex(alphabetIndexContainer);
         await modalManager.createMineralsList(mineralsListContainer);
 
+        // 説明文の表示状態を確認
+        const isDescriptionHidden = await localforage.getItem('hideDescription');
+        if (isDescriptionHidden) {
+            document.querySelector('.app-description').classList.add('hidden');
+        }
+
+        // 閉じるボタンのイベントリスナー
+        document.getElementById('close-description').addEventListener('click', async function() {
+            const description = document.querySelector('.app-description');
+            description.style.opacity = '0';
+            await localforage.setItem('hideDescription', true);
+            setTimeout(() => {
+                description.classList.add('hidden');
+            }, 300); // トランジションの時間と同じにする
+        });
+
     } catch (error) {
         console.error('アプリケーションの初期化に失敗しました:', error);
         alert('アプリケーションの読み込みに失敗しました。ページを更新してください。');
